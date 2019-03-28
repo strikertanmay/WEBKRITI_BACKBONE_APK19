@@ -1,2 +1,16 @@
 # WEBKRITI_BACKBONE_APK19
-Repository for project submission of an event organised in Aparoksha19
+  used html ,css,js,bootstrap
+TASK COMPLETED
+1. Created login page for user (present in user_login directory)
+        <>Run  iit2018185_punisher1151_AyushVerma/user_login/index.html
+       
+2. Created login page for moderator (present in moderator_login directory)
+        <>Run  iit2018185_punisher1151_AyushVerma/moderator_login/index.html
+
+3. Created Dashboard for searching ambulance using address (present in dashboard directory)
+      
+       <>Run  iit2018185_punisher1151_AyushVerma/dashboard_user/dash.html
+
+4. Created dashboard for displaying ambulances with given details (present in dashboard directory)
+
+       <>Run  iit2018185_punisher1151_AyushVerma/dashboard_user/user_dashboard.html
