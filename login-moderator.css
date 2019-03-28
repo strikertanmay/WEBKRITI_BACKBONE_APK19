@@ -1,0 +1,66 @@
+body{
+	padding: 0;
+	margin: 0;
+	background-color: #004c45;
+}
+
+.container{
+	position: absolute;
+	top: 50%;
+	left: 50%;
+	padding-bottom: 30px;
+	transform: translate(-50%,-50%);
+	text-align: center;
+}
+
+h1{
+	font-size: 70px;
+	font-family: Georgia;
+	margin-bottom: 50px;
+	color: #000000;
+}
+
+.inputs{
+	width: 400px;
+	height: 40px;
+	margin-bottom: 20px;
+	font-size: 20px;
+	color: #000000;
+}
+
+label{
+	font-size: 30px;
+	color: #000000;
+	text-transform: uppercase;
+}
+
+input{
+	border-radius: 10px;
+}
+
+
+
+
+@media only screen and (max-width: 1080px) {
+	h1{
+		font-size: 30px;
+	}
+	.inputs{
+		width: 200px;
+		height: 35px;
+		margin-bottom: 15px;
+		font-size: 15px;
+	}
+	label{
+		font-size: 20px;
+	}
+
+	input{
+		border-radius: 10px;
+	}
+}
+
+
+
+
+
