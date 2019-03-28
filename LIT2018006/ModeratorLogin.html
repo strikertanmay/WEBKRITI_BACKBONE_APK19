@@ -1,0 +1,159 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+    <title>Moderator LogIn</title>
+    <link
+      rel="stylesheet"
+      href="https://use.fontawesome.com/releases/v5.8.1/css/all.css"
+      integrity="sha384-50oBUHEmvpQ+1lW4y57PTFmhCaXp0ML5d60M1M7uH2+nqUivzIebhndOJK28anvf"
+      crossorigin="anonymous"
+    />
+    <link
+      href="https://fonts.googleapis.com/css?family=Playfair+Display"
+      rel="stylesheet"
+    />
+    <style>
+      body,
+      html {
+        font-family: "Playfair Display", serif;
+        margin: 0;
+        height: 100%;
+      }
+      .log-in-global {
+        width: 100%;
+        height: 100%;
+        background: rgba(211, 211, 211, 0.507);
+      }
+      .log-in-inner {
+        height: 100%;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+      }
+      .far {
+        font-size: 80px;
+        text-align: center;
+        display: flex;
+        justify-content: center;
+        padding-bottom: 20px;
+        color: black;
+      }
+      .col {
+        padding: 10px;
+        display: flex;
+        flex-direction: column;
+        background: transparent;
+      }
+      .col a {
+        width: 100%;
+        padding: 10px;
+        text-decoration: none;
+        width: 100%;
+        font-size: 18px;
+        color: black;
+        /* background: white; */
+      }
+      .col a:hover {
+        background-color: black;
+        color: white;
+        cursor: pointer;
+      }
+      .log-in-form {
+        background: white;
+        box-shadow: 1px 1px 20px 7px rgba(65, 65, 65, 0.253);
+        border-radius: 10px;
+        padding: 40px 60px;
+        width: 380px;
+      }
+      .input-form {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        margin: 10px 0px;
+      }
+      .input {
+        border: solid 1px rgba(0, 0, 0, 0.171);
+        border-radius: 5px;
+        color: rgba(0, 0, 0, 0.425);
+        margin: 5px 0;
+        padding: 15px 0;
+        display: block;
+        background: white;
+      }
+      .input:focus {
+        outline: transparent;
+      }
+      .btn {
+        padding: 5px 0;
+        font-size: 18px;
+        background-color: white;
+        color: black;
+      }
+      .btn:hover {
+        background-color: black;
+        color: white;
+        cursor: pointer;
+      }
+      .account-login {
+        font-weight: normal;
+        margin: 10px 0 0 0;
+      }
+      h3 {
+        font-weight: normal;
+        margin: 10px 0 0 0;
+      }
+      .log-in-btn {
+        /* margin-left: 1vw; */
+        margin-top: 20px;
+        align-self: flex-start;
+        padding: 15px 30px;
+        background: black;
+        color: white;
+        border-radius: 20px;
+      }
+      .log-in-btn:hover {
+        cursor: pointer;
+      }
+      @media only screen and (max-width: 556px) {
+        .log-in-form {
+          width: 70%;
+        }
+      }
+    </style>
+  </head>
+  <body>
+    <div class="log-in-global">
+      <div class="log-in-inner">
+        <div class="log-in-form">
+          <h2 class="account-login">ACCOUNT LOGIN</h2>
+          <form class="input-form" action="">
+            <h3 class="input-head">Username</h3>
+            <input class="input userID" type="text" name="ID" />
+            <h3 class="input-head">Password</h3>
+            <input class="input userID" type="text" name="Password" />
+            <input
+              class="input log-in-btn"
+              style=""
+              type="submit"
+              value="Log In"
+            />
+          </form>
+          <div class="col">
+            <a href="#" class="fb social-btn">
+              <i class="fab fa-facebook"></i> Login with Facebook
+            </a>
+            <a href="#" class="twitter social-btn">
+              <i class="fab fa-twitter-square"></i> Login with Twitter
+            </a>
+            <a href="#" class="google social-btn">
+              <i class="fab fa-google"></i> Login with Google+
+            </a>
+          </div>
+        </div>
+      </div>
+    </div>
+  </body>
+</html>

@@ -1,0 +1,140 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+    <title>Ambulance Registration</title>
+    <link
+      rel="stylesheet"
+      href="https://use.fontawesome.com/releases/v5.8.1/css/all.css"
+      integrity="sha384-50oBUHEmvpQ+1lW4y57PTFmhCaXp0ML5d60M1M7uH2+nqUivzIebhndOJK28anvf"
+      crossorigin="anonymous"
+    />
+    <link
+      href="https://fonts.googleapis.com/css?family=Playfair+Display"
+      rel="stylesheet"
+    />
+    <style>
+      body,
+      html {
+        font-family: "Playfair Display", serif;
+        margin: 0;
+        height: 100%;
+      }
+      .log-in-global {
+        width: 100%;
+        height: 100%;
+        background-image: linear-gradient(
+            rgba(0, 0, 0, 0.5),
+            rgba(0, 0, 0, 0.5)
+          ),
+          url("https://gcn.com/~/media/GIG/GCN/Redesign/Articles/2013/June/ambulance.png");
+        background-size: cover;
+        background-position: center;
+      }
+      .log-in-inner {
+        height: 100%;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+      }
+      .far {
+        font-size: 80px;
+        text-align: center;
+        display: flex;
+        justify-content: center;
+        padding-bottom: 20px;
+        color: white;
+      }
+      .col {
+        padding: 10px;
+        display: flex;
+        flex-direction: column;
+        background: transparent;
+      }
+      .col a {
+        width: 100%;
+        padding: 10px;
+        text-decoration: none;
+        width: 100%;
+        font-size: 18px;
+        color: white;
+        /* background: white; */
+      }
+      .col a:hover {
+        background-color: black;
+        color: white;
+        cursor: pointer;
+      }
+      .log-in-form {
+        background: rgba(0, 0, 0, 0.541);
+        /* background: linear-gradient(rgb(165, 161, 161), whitesmoke); */
+        /* position: fixed;
+        top: 37%;
+        left: 45%; */
+        box-shadow: 1px 1px 20px 20px rgba(65, 65, 65, 0.253);
+        border-radius: 10px;
+        padding: 40px 40px;
+      }
+      .input-form {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        margin: 10px 0px;
+      }
+      .input {
+        border-radius: 5px;
+        color: rgba(0, 0, 0, 0.425);
+        margin: 5px;
+        padding: 5px;
+        display: block;
+        background: white;
+      }
+      .input:focus {
+        outline: transparent;
+      }
+      .btn {
+        padding: 5px 0;
+        font-size: 18px;
+        background-color: white;
+        color: black;
+      }
+      .btn:hover {
+        background-color: black;
+        color: white;
+        cursor: pointer;
+      }
+    </style>
+  </head>
+  <body>
+    <div class="log-in-global">
+      <div class="log-in-inner">
+        <div class="log-in-form">
+          <i class="far fa-user"></i>
+          <form class="input-form" action="">
+            <input class="input userID" type="text" name="ID" value="User ID" />
+            <input
+              class="input userID"
+              type="text"
+              name="Password"
+              value="Password"
+            />
+            <input class="input btn" type="submit" value="Log In" />
+          </form>
+          <div class="col">
+            <a href="#" class="fb social-btn">
+              <i class="fab fa-facebook"></i> Login with Facebook
+            </a>
+            <a href="#" class="twitter social-btn">
+              <i class="fab fa-twitter-square"></i> Login with Twitter
+            </a>
+            <a href="#" class="google social-btn">
+              <i class="fab fa-google"></i> Login with Google+
+            </a>
+          </div>
+        </div>
+      </div>
+    </div>
+  </body>
+</html>
