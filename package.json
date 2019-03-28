@@ -1,0 +1,21 @@
+{
+  "name": "medicalapp",
+  "version": "1.0.0",
+  "description": "A Web Application to track and book Ambulances.",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "dependencies": {
+    "body-parser": "*",
+    "ejs": "^2.6.1",
+    "express": "*",
+    "express-session": "^1.15.6",
+    "mongoose": "*",
+    "passport": "^0.4.0",
+    "passport-local": "^1.0.0",
+    "passport-local-mongoose": "^5.0.1"
+  },
+  "author": "Prabhakar Kumar",
+  "license": "ISC"
+}
