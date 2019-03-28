@@ -1,0 +1,91 @@
+<html>
+<head>
+	<title>Login Page</title>
+	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <style>
+           .backimage{
+                      background-image:url("a.jpg");
+                      height:100%;
+                      background-position:center;
+                      background-repeat: no-repeat;
+                      background-size: cover;
+                      padding:0;
+                      margin:0;   
+                   }
+           .username{
+          	       border: 2px solid black;
+                   padding: 10px;
+                   margin-left:  10px;
+                   border-radius: 5px;
+                   width:220px;
+                   }
+            .user {
+                  font-family: Helvetica;
+                  font-size:  1.2vw;
+                  }
+           .heading{
+                     font-family: Helvetica;
+                     font-size: 1.8vw;
+                   }
+            .submit{
+            	   border: 2px solid black;
+                   height:40px;
+                   width:140px;
+                   margin-left:  25px;
+                   border-radius: 6px;
+                   }
+            .container{
+                        position:relative;
+                        border:4px solid black;
+                        text-align:left;
+                        top:20px;
+                        left:820px;
+                        width: 330px;
+                        height: 500px; 
+                        border-radius: 10px;
+                        padding: 30px;
+                        background-color:rgba(190,190,190,0.7);
+                      }
+    </style>
+</head>
+<body>
+	<div class = "backimage">
+	<form method = "POST" target = "_self" class = "container" action = "user.php">
+		<div class = "main">
+			<legend class = "heading">Welcome to IIIT-A Health Centre</legend>
+			<br><br>
+			<label class = "user">Username:</label>
+			<br><br>
+			<i class="fa fa-user"></i>
+		    <input type = "text" class = "username" name = "user" placeholder = "Enter your Username" required></input>
+			<br><br>
+			<label class = "user">Email-Id:</label>
+			<br><br>
+			<i class="fa fa-lock"></i>
+			   <input type = "email" class = "username" name = "mail" placeholder = "1234@gmail.com" required>
+			   <br><br>
+      <label class = "user">Password:</label><br><br>
+      <i class="fa fa-lock" aria-hidden="true"></i>
+           <input type = "password" class = "username" name = "passcode" placeholder = "********" required>
+           <br><br>
+      <i class="fas fa-lock-alt"></i>
+         <input type = "submit" value = "Sign In" class = "submit">
+         <br><br>
+      <hr>
+      <br>
+      <div> 
+        <label class = "user">New User</label>
+        <input type = "submit" value = "Sign Up" class = "submit" onclick = "redirect()">
+        <br><br>
+     </div>
+    </div>
+    </form>
+  </div>
+  <script>
+     function redirect()
+     {
+        location.href = "http://localhost/webkriti/signupuser.html";
+     }
+  </script>
+</body>
+</html>

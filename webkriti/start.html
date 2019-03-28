@@ -1,0 +1,85 @@
+<html>
+<head>
+	<title>Welcome Page</title>
+	<link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.7.2/css/all.css">
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.7.2/css/v4-shims.css">
+	<style>
+           .backimage{
+                      background-image:url("laptop.jpg");
+                      height:100%;
+                      background-position:center;
+                      background-repeat: no-repeat;
+                      background-size: cover;
+                      padding:0;
+                      margin:0;   
+                   }
+           .username{
+          	       border: 2px solid black;
+                   padding: 10px;
+                   margin-left:  10px;
+                   border-radius: 5px;
+                   width:220px;
+                   }
+            .user {
+                  font-family: Helvetica;
+                  font-size:  1.2vw;
+                  }
+           .heading{
+                     font-family: Helvetica;
+                     font-size: 1.8vw;
+                   }
+            .submit{
+            	   border: 2px solid black;
+                   height:40px;
+                   width:180px;
+                   margin-left:  25px;
+                   border-radius: 6px;
+                   }
+            .container{
+                        position:relative;
+                        border:4px solid black;
+                        text-align:left;
+                        top:100px;
+                        left:450px;
+                        width: 350px;
+                        height: 300px; 
+                        border-radius: 20px;
+                        padding: 30px;
+                        background-color:rgba(190,190,190,0.7);
+                      }
+    </style>
+</head>
+<body>
+	<div class = "backimage">
+	<form class = "container">
+		<legend class = "heading">Welcome to IIIT-A Health-Centre</legend>
+		<br><br>
+		<i class="fa fa-user"></i>
+	     	<input type = "submit" value = "Login for User" class = "submit" onclick = "userlogin(event)">
+		    <br><br>
+		<i class="fa fa-arrow-circle-up"></i>
+		    <label class = "user">For User Click Above</label>
+		    <br><br><br>
+		<i class="fa fa-arrow-circle-down"></i>
+		    <label class = " user">For Moderator Click Below</label>
+		    <br><br>
+        <i class="fa fa-user"></i>
+		   <input type ="submit" value = "Login for Moderator" class = "submit" onclick = "moderatorlogin(event)">
+		   <br><br> 
+	</form>
+    </div>
+    <script>
+       function userlogin(e)
+       {
+         e.preventDefault();
+         document.location.href = "http://localhost/webkriti/userlogin.html";
+       }
+       function moderatorlogin(e)
+       {
+       	 e.preventDefault();
+         document.location.href = "http://localhost/webkriti/moderatorlogin.html"
+       }
+    </script>
+</body>
+</html>
+
