@@ -1,0 +1,10 @@
+{% extends 'base.html' %}
+{% block content %}
+{% for ambulance in ambulances %}
+        <div class="post">
+            <h1><a href="{% url 'Q1:ambulance_detail' pk=ambulance.pk %}">{{ ambulance.hospital_name }}</a></h1>
+            <p>{{ amb.hospital_name|linebreaksbr }}</p>
+            <p>{{ amb.driver|linebreaksbr }}</p>
+        </div>
+    {% endfor %}
+{% endblock %}

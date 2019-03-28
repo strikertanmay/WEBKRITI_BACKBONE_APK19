@@ -1,0 +1,10 @@
+{% extends 'base.html' %}
+
+{% block content %}
+    <div class='post'>
+            <h1>{{ ambulance.amb_num }}</h1>
+        <p>{{ ambulance.hospital_name | linebreaksbr }}</p>
+        <p>{{ ambulance.driver | linebreaksbr }}</p>
+    </div>
+    <hr>
+{% endblock %}
