@@ -1,2 +1,2 @@
-# WEBKRITI_BACKBONE_APK19
-Repository for project submission of an event organised in Aparoksha19
+solved the login page for moderator
+solved the login page for user
