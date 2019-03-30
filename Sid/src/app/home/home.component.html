@@ -1,0 +1,45 @@
+<mat-card>
+  <button mat-raised-button (click)="initInputTextBox()" *ngIf="!textBox && moderator">Add Ambulance</button>
+  <mat-form-field *ngIf="textBox">
+    <input matInput placeholder="Ambulance number" [(ngModel)]="number" />
+  </mat-form-field>
+  <mat-form-field *ngIf="textBox">
+    <input matInput placeholder="Location" [(ngModel)]="location" />
+  </mat-form-field>
+  <mat-form-field *ngIf="textBox">
+    <input matInput placeholder="Driver name" [(ngModel)]="name" />
+  </mat-form-field>
+  <mat-form-field *ngIf="textBox">
+    <input matInput placeholder="Phone number" [(ngModel)]="phone" />
+  </mat-form-field>
+
+  <button mat-raised-button (click)="submit()" *ngIf="textBox">Submit</button>
+  <button mat-raised-button (click)="removeTextBox()" *ngIf="textBox">Cancel</button>
+
+  <div class="container">
+    <table class="table">
+      <thead>
+        <tr>
+          <th scope="col">Driver Name</th>
+          <th scope="col">Location</th>
+          <th scope="col">Phone Number</th>
+          <th scope="col">Ambulance Number</th>
+        </tr>
+      </thead>
+      <tbody>
+        <tr *ngFor="let ambulance of ambList">
+          <th scope="row" *ngIf="!ambulance.edit">{{ ambulance.driver_name }}</th>
+          <td *ngIf="!ambulance.edit">{{ ambulance.location }}</td>
+          <td *ngIf="!ambulance.edit">{{ ambulance.phone_number }}</td>
+          <td *ngIf="!ambulance.edit">{{ ambulance.ambulance_number }}</td>
+          <app-ambulance [ambulance]="ambulance" *ngIf="ambulance.edit"></app-ambulance>
+          <button mat-raised-button (click)="editAmbulance(ambulance.id)" *ngIf="!ambulance.edit && moderator">
+            Update
+          </button>
+          <button mat-raised-button (click)="deleteAmbulance(ambulance.id)" *ngIf="moderator">Delete</button>
+          <button mat-raised-button (click)="select(ambulance.id)" *ngIf="!moderator">Select</button>
+        </tr>
+      </tbody>
+    </table>
+  </div>
+</mat-card>

@@ -1,0 +1,20 @@
+{
+  "generator-ngx-rocket": {
+    "version": "5.3.0",
+    "props": {
+      "location": "path",
+      "appName": "webkriti",
+      "target": ["web"],
+      "pwa": true,
+      "ui": "material",
+      "layout": "simple",
+      "auth": true,
+      "lazy": true,
+      "angulartics": false,
+      "prettier": true,
+      "projectName": "webkriti",
+      "packageManager": "npm",
+      "mobile": []
+    }
+  }
+}

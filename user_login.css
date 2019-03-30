@@ -1,0 +1,33 @@
+body
+{
+	text-align: center;
+	padding: 10%;
+	background: url(/home/himanshu/Dev/Webkriti/braden-hopkins-251378-unsplash.jpg);
+	background-position: center;
+	background-size: cover; 
+	font-family: 'Roboto Condensed', sans-serif;
+}
+h1,h2,h3
+{
+	color: white;
+}
+.form-group
+{
+	color: white;
+}
+h3
+{
+	padding-top: 25px;
+	font-size: 40px; 
+}
+.A
+{
+	font-size: 35px;
+	color: white;
+}
+.form-group
+{
+	padding-left: 25%;
+	padding-right: 25%; 
+}
+

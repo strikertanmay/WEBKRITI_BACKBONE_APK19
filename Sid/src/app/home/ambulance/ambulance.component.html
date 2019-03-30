@@ -1,0 +1,22 @@
+<th *ngIf="ambulance.edit">
+  <mat-form-field>
+    <input matInput placeholder="Ambulance number" [(ngModel)]="number" />
+  </mat-form-field>
+</th>
+<td *ngIf="ambulance.edit">
+  <mat-form-field>
+    <input matInput placeholder="Location" [(ngModel)]="location" />
+  </mat-form-field>
+</td>
+<td *ngIf="ambulance.edit">
+  <mat-form-field>
+    <input matInput placeholder="Driver name" [(ngModel)]="name" />
+  </mat-form-field>
+</td>
+<td *ngIf="ambulance.edit">
+  <mat-form-field>
+    <input matInput placeholder="Phone number" [(ngModel)]="phone" />
+  </mat-form-field>
+</td>
+<button *ngIf="ambulance.edit" mat-raised-button (click)="update()">Update</button>
+<button *ngIf="ambulance.edit" mat-raised-button (click)="cancel()">Cancel</button>

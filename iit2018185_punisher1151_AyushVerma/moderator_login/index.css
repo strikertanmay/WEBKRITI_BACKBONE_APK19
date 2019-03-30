@@ -1,0 +1,57 @@
+body{
+	background: #f0f0f0;
+}
+#login-contain{
+	position: absolute;
+	width:40%;
+	height:50%;
+	margin-left: 32%;
+	padding-right: 0px;
+	/*margin-right: 100%;*/
+	margin-top: 8%;
+	/*margin-right: auto;*/
+	background: #ccd5c8;
+	display-flex;
+	justify-content: center;
+	/*padding-top: 2.3rem;*/
+
+
+}
+#signup{
+	float: 	right;
+	margin-right: 15px;
+}
+
+#headinglog{
+	padding-left: 8px;
+	padding-top: 2rem;
+}
+input{
+	width:84%;
+	height: 50px;
+}
+form	
+{
+		padding-top: 3rem;
+
+	padding-left: 1rem;
+
+}
+#signin{
+	width: 84%!important;
+}
+#a1{
+	padding-left: 34%;
+	padding-right: 10px;
+	padding-top: 5;
+}
+#a2{
+	padding-left: 10px;
+	padding-right: 10px;
+	padding-top: 2px;
+}
+#icons{
+	/*display-flex;*/
+	/*justify-content: center;*/
+	padding-top: 12px;
+}

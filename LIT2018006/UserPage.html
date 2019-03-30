@@ -1,0 +1,218 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+    <title>Ambulance Service</title>
+    <link
+      href="https://fonts.googleapis.com/css?family=Playfair+Display"
+      rel="stylesheet"
+    />
+  </head>
+  <style>
+    body,
+    html {
+      font-family: "Playfair Display", serif;
+      width: 100%;
+      height: 100%;
+      margin: 0;
+    }
+    nav {
+      width: 100%;
+      height: 100px;
+      background: tomato;
+    }
+    .user-name {
+      /* margin-bottom: 5px; */
+    }
+    .user-email {
+      /* margin-top: 5px; */
+    }
+    .user-info-outer {
+      /* padding: 10px 30vw; */
+      display: flex;
+      justify-content: center;
+    }
+    .user-detail {
+      display: flex;
+      justify-content: space-between;
+      box-shadow: 1px 1px 20px 7px rgba(65, 65, 65, 0.253);
+      margin-top: 40px;
+    }
+    .user-image img {
+      width: 100%;
+      height: 100%;
+    }
+    .user-text {
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      padding: 10px;
+    }
+    .ambulance-types-outer {
+      display: flex;
+      justify-content: center;
+      padding: 50px 22vw;
+    }
+    .ambulance-type-inner {
+      flex-wrap: wrap;
+      display: flex;
+      justify-content: space-around;
+    }
+    .ambulance-type-detail {
+      text-align: center;
+      margin: 20px;
+      box-shadow: 1px 1px 20px 0px rgba(65, 65, 65, 0.253);
+      display: flex;
+      flex-direction: column-reverse;
+    }
+    .ambulance-type-image img {
+      width: 100%;
+    }
+    .btn {
+      padding: 10px 25px;
+      font-size: 18px;
+      background-color: black;
+      color: white;
+      border: solid 1px rgba(0, 0, 0, 0.144);
+      margin-bottom: 10px;
+      border-radius: 30px;
+    }
+    .btn:hover {
+      background-color: black;
+      color: white;
+      cursor: pointer;
+    }
+    .ambulance-types-outer h1,
+    .ambulance-types-outer h2,
+    .ambulance-types-outer h3 {
+      font-weight: normal;
+    }
+  </style>
+  <body>
+    <nav></nav>
+    <div class="user-info-outer">
+      <div class="user-detail">
+        <div class="user-text">
+          <h1 class="user-name user">John Doe</h1>
+          <h2 class="user-email user">email@example.com</h2>
+          <h3 class="user-email user">Address: 221B Baker Street</h3>
+          <h3 class="user-email user">Mobile: +019416273890</h3>
+        </div>
+        <div class="user-image">
+          <img src="https://www.w3schools.com/w3images/team1.jpg" />
+        </div>
+      </div>
+    </div>
+    <div
+      class="types-of-ambulance"
+      style="text-align: center;margin-top: 200px;"
+    >
+      <h1 class="types-of-ambulance-head">Types Of Services</h1>
+      <p class="types-of-ambulance-para" style="font-size: 20px">
+        We have many types of ambulance to choose from!
+      </p>
+    </div>
+    <div class="ambulance-types-outer">
+      <div class="ambulance-type-inner">
+        <div class="ambulance-type-info-outer">
+          <div class="ambulance-type-detail">
+            <div class="ambulance-type-text">
+              <h1 class="ambulance-type-name user">Ambulance 1</h1>
+              <h2 class="ambulance-type-email user">email@example.com</h2>
+              <h3 class="ambulance-type-email user">
+                Address: 221B Baker Street
+              </h3>
+              <h3 class="ambulance-type-email user">Mobile: +019416273890</h3>
+              <input class="input btn" type="submit" value="Register" />
+            </div>
+            <div class="ambulance-type-image">
+              <img src="./download1.jpeg" />
+            </div>
+          </div>
+        </div>
+        <div class="ambulance-type-info-outer">
+          <div class="ambulance-type-detail">
+            <div class="ambulance-type-text">
+              <h1 class="ambulance-type-name user">Ambulance 2</h1>
+              <h2 class="ambulance-type-email user">email@example.com</h2>
+              <h3 class="ambulance-type-email user">
+                Address: 221B Baker Street
+              </h3>
+              <h3 class="ambulance-type-email user">Mobile: +019416273890</h3>
+              <input class="input btn" type="submit" value="Register" />
+            </div>
+            <div class="ambulance-type-image">
+              <img src="./download1.jpeg" />
+            </div>
+          </div>
+        </div>
+        <div class="ambulance-type-info-outer">
+          <div class="ambulance-type-detail">
+            <div class="ambulance-type-text">
+              <h1 class="ambulance-type-name user">Ambulance 3</h1>
+              <h2 class="ambulance-type-email user">email@example.com</h2>
+              <h3 class="ambulance-type-email user">
+                Address: 221B Baker Street
+              </h3>
+              <h3 class="ambulance-type-email user">Mobile: +019416273890</h3>
+              <input class="input btn" type="submit" value="Register" />
+            </div>
+            <div class="ambulance-type-image">
+              <img src="./download1.jpeg" />
+            </div>
+          </div>
+        </div>
+        <div class="ambulance-type-info-outer">
+          <div class="ambulance-type-detail">
+            <div class="ambulance-type-text">
+              <h1 class="ambulance-type-name user">Ambulance 1</h1>
+              <h2 class="ambulance-type-email user">email@example.com</h2>
+              <h3 class="ambulance-type-email user">
+                Address: 221B Baker Street
+              </h3>
+              <h3 class="ambulance-type-email user">Mobile: +019416273890</h3>
+              <input class="input btn" type="submit" value="Register" />
+            </div>
+            <div class="ambulance-type-image">
+              <img src="./download1.jpeg" />
+            </div>
+          </div>
+        </div>
+        <div class="ambulance-type-info-outer">
+          <div class="ambulance-type-detail">
+            <div class="ambulance-type-text">
+              <h1 class="ambulance-type-name user">Ambulance 1</h1>
+              <h2 class="ambulance-type-email user">email@example.com</h2>
+              <h3 class="ambulance-type-email user">
+                Address: 221B Baker Street
+              </h3>
+              <h3 class="ambulance-type-email user">Mobile: +019416273890</h3>
+              <input class="input btn" type="submit" value="Register" />
+            </div>
+            <div class="ambulance-type-image">
+              <img src="./download1.jpeg" />
+            </div>
+          </div>
+        </div>
+        <div class="ambulance-type-info-outer">
+          <div class="ambulance-type-detail">
+            <div class="ambulance-type-text">
+              <h1 class="ambulance-type-name user">Ambulance 1</h1>
+              <h2 class="ambulance-type-email user">email@example.com</h2>
+              <h3 class="ambulance-type-email user">
+                Address: 221B Baker Street
+              </h3>
+              <h3 class="ambulance-type-email user">Mobile: +019416273890</h3>
+              <input class="input btn" type="submit" value="Register" />
+            </div>
+            <div class="ambulance-type-image">
+              <img src="./download1.jpeg" />
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </body>
+</html>

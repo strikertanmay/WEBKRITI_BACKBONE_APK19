@@ -1,0 +1,20 @@
+body
+{
+	text-align: center;
+	padding: 5%;
+	background: url(/home/himanshu/Downloads/zhen-hu-340739-unsplash.jpg);
+	background-position: center;
+	background-size: cover; 
+	font-family: 'Roboto Condensed', sans-serif;
+}
+
+.A
+{
+	font-size: 35px;
+	background: #ffef96;
+}
+.form-group
+{
+	padding-left: 25%;
+	padding-right: 25%; 
+}
