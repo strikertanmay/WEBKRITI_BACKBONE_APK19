@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Client Home Page</title>
+	<style type="text/css">
+		#logout{
+			top:50px;
+			right:10px;
+		}
+	</style>
+</head>
+<body>
+<h1><center>Enter Your Details</center></h1>>
+<a id="logout" href="/userLogout">LOGOUT</a>
+<form action="/userSignup" method="POST">
+	<input type="text" placeholder="Enter Your Name" name="ambulance[drivername]">
+	<input type="text" placeholder="Ambulance Number" name="ambulance[number]">
+	<input type="text" placeholder="Phone Number" name="ambulance[phone]">
+	<%=ambulance[userId]=res.user.username %>
+	<button>Submit</button>
+</form>
+</body>
+</html>>

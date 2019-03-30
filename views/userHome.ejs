@@ -1,0 +1,11 @@
+<h1><center>User Home Page</center></h1>
+<a href="/userLogout">LOGOUT</a>
+<% ambulance.forEach(function(amb){ %>
+    <div>
+        <h4><%= amb.driverName %></h4>
+        <h3><%= amb.phoneNumber %></h3>
+        <span><%= blog.created %></span>
+        <p><%= blog.body.substring(0, 100) %>...</p>
+        <a href="/book/<%= amb._id %>">Book Ambulance!</a>
+    </div>
+<% }) %>
