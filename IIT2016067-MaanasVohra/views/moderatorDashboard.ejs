@@ -1,0 +1,140 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Moderator Dashboard</title>
+  <meta charset="UTF-8">
+  <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+<script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js" integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1" crossorigin="anonymous"></script>
+<script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js" integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM" crossorigin="anonymous"></script>
+
+<style>
+.main-area {
+    width: 80%;
+    margin: 0 auto;
+}
+</style>
+
+</head>
+<body>
+
+<div class="main-area">
+    <div class="row">
+        <div class="col-sm-6">
+            <strong>Email: </strong><%= data.email %>
+        </div>
+        <div class="col-sm-6">
+            <strong>Username: </strong><%= data.username %>
+        </div>
+    <div>
+
+    <div>
+        <button type="button" class="btn btn-primary" onclick="getResults()">Get all drivers</button>
+        <button type="button" class="btn btn-primary" onclick="addForm()">Add New</button>
+    </div>
+
+    <div id="add-form">
+
+    </div>
+
+    <div id="ambulance-list">
+
+    <div>
+</div>
+
+<script>
+
+
+    function openEditForm() {
+        
+    }
+
+    function getResults() {
+        fetch("http://localhost:3000/ambulances")
+        .then((resp) => resp.json())
+        .then(function(data){
+            // alert(JSON.stringify(data)); 
+            var list = document.getElementById("ambulance-list");
+            for(let i = 0; i < data.length; i++) {
+                var div = document.createElement("div");
+                var ambulance = data[i];
+                let l1, l2, l3, l4, l5;
+                l1 = document.createElement("p");
+                l1.innerHTML = "Ambulance Number: " + data[i].ambulanceNumber;
+                div.appendChild(l1);
+                l2 = document.createElement("p");
+                l2.innerHTML = "Driver Name: " + data[i].driverName;
+                div.append(l2);
+                l3 = document.createElement("p");
+                l3.innerHTML = "Phone Number: " + data[i].phoneNumber;
+                div.append(l3);
+                l4 = document.createElement("p");
+                l4.innerHTML = "Location: " + data[i].location;
+                div.append(l4);
+                l5 = document.createElement("p");
+                l5.innerHTML = "Status: " + data[i].status;
+                div.append(l5);
+
+                var newDiv = document.createElement("div");
+                var newButton = document.createElement("button");
+                newButton.innerHTML = "Edit";
+                newButton.addEventListener('click',function() {
+                    openEditForm();
+                });
+                newDiv.append(newButton);
+                div.append(newDiv);
+
+                var newDiv = document.createElement("div");
+                var newButton = document.createElement("button");
+                newButton.innerHTML = "Delete";
+                newDiv.append(newButton);
+                div.append(newDiv);
+
+                list.append(div);
+                list.append(document.createElement("hr"));
+
+            }
+        }) ;
+    }
+
+    function addForm() {
+        let x = document.getElementById("form-hai-yeh");
+        if(!x) {
+
+            var div = document.getElementById("add-form");
+            var newDiv = document.createElement("div");
+            newDiv.id = "form-hai-yeh";
+
+            var newForm = document.createElement("form");
+            newForm.action = "/ambulances";
+            newForm.method = "POST";
+
+            var i2 = document.createElement("input");
+            i2.placeholder = "Driver Name";
+            i2.name = "driverName";
+            newForm.append(i2);
+            var i3 = document.createElement("input");
+            i3.placeholder = "Phone Number";
+            i3.name = "phoneNumber";
+            newForm.append(i3);
+            var i4 = document.createElement("input");
+            i4.placeholder = "Location";
+            i4.name = "location";
+            newForm.append(i4);
+
+            var button = document.createElement("button");
+            button.innerHTML = "Add New";
+            button.type = "submit";
+            newForm.append(button);
+
+            newDiv.append(newForm);
+
+            div.append(newDiv);
+        }
+
+    }
+</script>
+
+</body>
+
+</html>

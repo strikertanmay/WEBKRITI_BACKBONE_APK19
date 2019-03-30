@@ -1,0 +1,60 @@
+body{
+	background: #f0f0f0;
+}
+#login-contain{
+	position: absolute;
+	width:40rem;
+	height:30%;
+	margin-left: 32%;
+	padding-right: 0px;
+	/*margin-right: 100%;*/
+	margin-top: 8%;
+	/*margin-right: auto;*/
+	/*background: #ccd5c8;*/
+	display-flex;
+	justify-content: center;
+	padding-top: 2.3rem;
+
+
+}
+
+#headinglog{
+	padding-left: 8rem;
+	padding-top: 2rem;
+}
+input{
+	width:70%;
+	height: 50px;
+
+}form	
+{
+		padding-top: 3rem;
+
+	padding-left: 1rem;
+
+}
+#signin{
+	width: 70%!important;
+}
+
+#signup{
+	/*float: 	right;*/
+	/*margin-right: 15px;*/
+	margin-top: 9px;
+	margin-left: 10px;
+}
+#a1{
+	margin-left: 28%;
+	margin-right: 10px;
+	padding-top: 5;
+}
+#a2{
+	margin-left: 10px;
+	margin-right: 10px;
+	padding-top: 2px;
+}
+#icons{
+	/*display-flex;*/
+	/*justify-content: center;*/
+	padding-top: 12px;
+}
