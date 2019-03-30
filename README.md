@@ -1,40 +1,17 @@
-# WEBKRITI_BACKBONE_APK19
-Repository for project submission of an event organised in Aparoksha19
+
+Steps to run: 
+1. `cd client`
+2. `yarn` or `npm install`. Prefer the yarn version.
+3. `yarn start`
+
+Tasks attempted:
+1. Login page for moderator. ( Referred to as admin in the web-app). Available on localhost:8080/adminLogin
+2. Login page for user. Available on localhost:8080/userLogin
+3. User - ambulance booking. Available on localhost:8080/user
+4. Admin - ambulance add, edit and listing of available ambulance services. Available on localhost:8080/admin/.
+
+Please note that, functionality is not integrated with the server, hence edit/add do not work. Although, could have done on client side with a little extra time :stuck_out_tongue_closed_eyes:
+
+Thanks for the event.:+1: Would have loved if some snacks were given.:stuck_out_tongue:
 
 
-A Login Page which stores User's data in database and display it as per user's choice
-
-Steps to setup this project in your local system
-
-1.Clone this project and save it in your local system.
-
-2.Install XAMPP on your local system to create a local server to run PHP and sql databse
-
-3.Save the download file in your "htdocs" folder present in XAMPP
-
-4.Launch APACHE and MYSQL through XAMPP
-
-5.Search for localhost in your browser.
-
-6.Go to phpmyadmin and create  two database .named as 1.moderator.   2.user
-   
-
-7.Name the table as "h_user" and create 6 columns in it.
-
-8.Name the columns sequetially as 1.username 4.gender
-
-                              2.mail         5.contact
-                              
-                              3.dob          6.password
-9.Modify the "connection2.php" as per yours credentials to establish connection between php and MySQL with database named as user.
-
-
-10. Name the table of moderator as h_staff and create 5 columns in it.
-
-11. Name the table as 'h_staff' and create 5 columns in it.
-
-12.Name the columns sequentially as 1.username.  2.mail  3.dob  4.gender. 5.contact
-
-13.Modify the 'connection1.php' as per yours credentials to establish connection between php and MySQL with database named as moderator.
-  
-14.Setup is ready .
