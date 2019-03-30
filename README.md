@@ -1,7 +1,4 @@
 
-# WEBKRITI_BACKBONE_APK19
-Repository for project submission of an event organised in Aparoksha19
-
 Steps to run: 
 1. `cd client`
 2. `yarn` or `npm install`. Prefer the yarn version.
@@ -16,4 +13,5 @@ Tasks attempted:
 Please note that, functionality is not integrated with the server, hence edit/add do not work. Although, could have done on client side with a little extra time :stuck_out_tongue_closed_eyes:
 
 Thanks for the event.:+1: Would have loved if some snacks were given.:stuck_out_tongue:
+
 
